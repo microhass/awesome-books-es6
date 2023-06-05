@@ -1,0 +1,199 @@
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav {
+  height: 50px;
+  border: 3px solid #000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-weight: bolder;
+  color: #000;
+}
+
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+}
+
+.book-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.nav-ul li:nth-child(2) {
+  border-right: 3px solid #000;
+  border-left: 3px solid #000;
+  padding: 0 10px;
+}
+
+.nav-ul a {
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-ul a:hover {
+  color: #09ba09;
+  transition: 0.3s ease-in;
+}
+
+header p {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.container h1,
+.container h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#time {
+  margin-bottom: 10px;
+}
+
+.error {
+  width: 100%;
+  background: #f84242;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.success {
+  width: 100%;
+  background: rgb(9, 186, 9);
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.book-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 3px solid #000;
+}
+
+.book-list li:nth-child(odd) {
+  background: #ccc;
+}
+
+button {
+  display: inline-block;
+  background: #f84242;
+  color: #fff;
+  font-weight: bolder;
+  box-shadow: 2px 2px #000;
+  padding: 0 20px;
+  height: 40px;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 5px 5px #000;
+  transition: 1s ease-in-out;
+}
+
+.form-field {
+  display: none;
+}
+
+.form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+#title,
+#author {
+  display: block;
+  border: 3px solid #000;
+  margin: 10px 0;
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+}
+
+#title::placeholder,
+#author::placeholder {
+  color: #000;
+  font-weight: bolder;
+}
+
+.form button {
+  float: right;
+  background: #09ba09;
+}
+
+.contact {
+  display: none;
+  width: 500px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.contact h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.contact p {
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.contact ul {
+  margin-top: 20px;
+  font-weight: bolder;
+  margin-left: 30px;
+}
+
+footer {
+  border: 3px solid #000;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
