@@ -1,7 +1,3 @@
-const form = document.querySelector('.form');
-const msg = document.querySelector('.msg');
-const bookList = document.querySelector('.book-list');
-
 const timeDate = document.querySelector('#time');
 
 const options = {

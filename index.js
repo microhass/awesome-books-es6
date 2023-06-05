@@ -1,5 +1,6 @@
 import switchPage from './modules/pagination.js';
 import isValid from './modules/validate.js';
+import updateTime from './modules/dateTime.js';
 import * as storage from './modules/storage.js';
 import * as view from './modules/view.js';
 
@@ -9,6 +10,8 @@ const list = document.querySelector('#list');
 const addBook = document.querySelector('#addbook');
 const contact = document.querySelector('#contact');
 const bookList = document.querySelector('.book-list');
+
+setInterval(updateTime, 1000);
 
 window.addEventListener('load', () => {
   [list, addBook, contact].forEach((link) => {
@@ -37,6 +40,7 @@ form.addEventListener('submit', (e) => {
   switchPage(list);
   view.displayMessage('Book added successfully', 'success');
   view.clearInputFields();
+  return null;
 });
 
 bookList.addEventListener('click', (e) => {

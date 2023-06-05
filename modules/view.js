@@ -12,7 +12,7 @@ export const renderBooks = () => {
        <p>"${book.title}" by ${book.author}</p>
        <button id="remove" type="button">Remove</button>
     </li>
-  `
+  `,
     )
     .join('');
   bookList.innerHTML = allBooks;
