@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Awesome Books](#-awesome-books)
+- [📖 Awesome Books ES6](#-awesome-books-es6)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -20,9 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books<a name="about-project"></a>
+# 📖 Awesome Books ES6<a name="about-project"></a>
 
-**A simple JavaScript application to create and manage a list of books.**
+**A simple JavaScript application to create and manage a list of books by use of es6 syntax.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,7 +64,8 @@
 <!-- Live Demo -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-<a href="https://microhass.github.io/awesome-books/"> See Project 🚀</a>
+
+<a href="https://microhass.github.io/awesome-books-es6/"> See Project 🚀</a>
 
 <!-- GETTING STARTED -->
 
@@ -74,20 +75,22 @@
 
 To get get a local copy up and running, you can follow these simple steps:
 
-
 ### Install
+
 Clone the repository to your local machine using the following command:
 
 ```sh
-  git clone https://github.com/microhass/awesome-books.git
+  git clone https://github.com/microhass/awesome-books-es6.git
 ```
+
 Navigate to the project directory:
 
 ```sh
- cd awesome-books
+ cd awesome-books-es6
 ```
 
 Open the index.html file in your web browser to view the project:
+
 ```sh
  open index.html
 ```
@@ -96,18 +99,15 @@ You can now make changes to the project as desired and push them back to the rep
 
 That's it! With these simple steps, you should be able to get up and running with the Book list project in no time. Happy coding!
 
-
-
 ### Usage
 
-To use this project, simply visit the following link: https://github.com/microhass/awesome-books
+To use this project, simply visit the following link: https://github.com/microhass/awesome-books-es6
 
-- **Open the <a href="https://microhass.github.io/awesome-books/">project 🚀</a> in your web browser.**
+- **Open the <a href="https://microhass.github.io/awesome-books-es6/">project 🚀</a> in your web browser.**
 
 - **Use the provided form to add books to the list.**
 
 - **To remove a book, click the "Remove" button next to the book entry.**
-
 
 <!-- ### Run tests
 
@@ -120,7 +120,6 @@ Example command:
   bin/rails test test/models/article_test.rb
 ```
 --->
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,14 +134,6 @@ Example command:
 - GitHub: [@hassanShakur](https://github.com/hassanShakur)
 - Twitter: [@hassShakur](https://twitter.com/hassShakur)
 - LinkedIn: [hassanShakur](https://www.linkedin.com/in/hassanShakur)
-
-👤 **Okolie Tochukwu**
-
-- GitHub: [@ticoniq](https://github.com/ticoniq)
-- Twitter: [@ticoniq_](https://twitter.com/ticoniq_)
-- LinkedIn: [ticoniq](https://linkedin.com/in/ticoniq)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +176,7 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-  
+
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
