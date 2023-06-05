@@ -8,48 +8,43 @@ const form = document.querySelector('.form');
 const list = document.querySelector('#list');
 const addBook = document.querySelector('#addbook');
 const contact = document.querySelector('#contact');
-
-[list, addBook, contact].forEach((link) => {
-  link.addEventListener('click', () => {
-    switchPage(link);
-  });
-});
+const bookList = document.querySelector('.book-list');
 
 window.addEventListener('load', () => {
+  [list, addBook, contact].forEach((link) => {
+    link.addEventListener('click', () => {
+      switchPage(link);
+    });
+  });
+
   view.renderBooks();
 });
 
 form.addEventListener('submit', (e) => {
+  e.preventDefault();
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
-  let id = Math.random() * 2;
-  id += title;
+  const id = Math.random() * 2 + title;
 
   if (!isValid(title) && !isValid(author)) {
-    view.displayMessage('Please fill all fields!');
+    return view.displayMessage('Please fill all fields!', 'error');
   }
 
   const newBook = { id, title, author };
 
   storage.saveBookToStorage(newBook);
   view.renderBooks();
+  switchPage(list);
+  view.displayMessage('Book added successfully', 'success');
+  view.clearInputFields();
+});
 
-  //     // Display book on the UI
-  //     ui.displayBooks(newBook);
-
-  //     // Save books data to localStorage
-  //     UI.addToLocalStorage(newBook);
-
-  //     document.querySelector('.list').style.display = 'block';
-  //     document.querySelector('.form-field').style.display = 'none';
-  //     document.querySelector('.contact').style.display = 'none';
-
-  //     // display message
-  //     UI.getMessage('Book added successfully', 'success');
-
-  //     document.querySelector('#title').value = '';
-  //     document.querySelector('#author').value = '';
-  //   }
-  // prevent default submit
+bookList.addEventListener('click', (e) => {
   e.preventDefault();
+  if (e.target.id !== 'remove') return;
+  const book = e.target.parentElement;
+
+  storage.removeFromStorage(book.id);
+  view.renderBooks();
+  view.displayMessage('Book removed successfully', 'success');
 });

@@ -12,7 +12,7 @@ export const renderBooks = () => {
        <p>"${book.title}" by ${book.author}</p>
        <button id="remove" type="button">Remove</button>
     </li>
-  `,
+  `
     )
     .join('');
   bookList.innerHTML = allBooks;
@@ -27,4 +27,9 @@ export const displayMessage = (message, msgStatus) => {
     msg.classList.remove(msgStatus);
     msg.innerText = '';
   }, 3000);
+};
+
+export const clearInputFields = () => {
+  document.querySelector('#title').value = '';
+  document.querySelector('#author').value = '';
 };
